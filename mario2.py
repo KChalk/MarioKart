@@ -19,10 +19,10 @@ from sklearn.cluster import KMeans
 sns.set_context('talk')
 
 # originally from https://github.com/woodnathan/MarioKart8-Stats, added DLC and fixed a few typos
-bodies = pd.read_csv('mariokart/bodies.csv')
-chars = pd.read_csv('mariokart/characters.csv')
-gliders = pd.read_csv('mariokart/gliders.csv')
-tires = pd.read_csv('mariokart/tires.csv')
+bodies = pd.read_csv('bodies.csv')
+chars = pd.read_csv('characters.csv')
+gliders = pd.read_csv('gliders.csv')
+tires = pd.read_csv('tires.csv')
 
 # use only stock (non-DLC) characters / karts / tires
 chars = chars.loc[chars['DLC']==0]
